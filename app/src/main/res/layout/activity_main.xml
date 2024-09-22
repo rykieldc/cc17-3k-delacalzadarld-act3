@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/roll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/result"
+        android:textColor="#FF8FAB"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/dice_img"
+        android:contentDescription="@string/dice"
+        app:srcCompat="@drawable/dice_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/roll"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"/>
+
+</LinearLayout>
